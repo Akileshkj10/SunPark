@@ -35,7 +35,7 @@ export default function CompanyPage() {
 
       <SectionShell>
         <div className="split-layout">
-          <SignatureCard tone="cream">
+          <SignatureCard tone="forest">
             <p className="eyebrow">Mission</p>
             <h2 className="type-display-md">
               Turn underused commercial parking into clean energy infrastructure.

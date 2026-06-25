@@ -78,7 +78,7 @@ export default function SectorsPage() {
 
       <SectionShell>
         <div className="split-layout">
-          <SignatureCard tone="cream">
+          <SignatureCard tone="dark">
             <p className="eyebrow">Multi-site expansion</p>
             <h2 className="type-display-md">
               One framework can speed up future site decisions.

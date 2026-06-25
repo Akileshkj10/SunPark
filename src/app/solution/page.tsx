@@ -51,7 +51,7 @@ export default function SolutionPage() {
               decision.
             </p>
           </div>
-          <SignatureCard tone="cream">
+          <SignatureCard tone="coral">
             <h3 className="type-display-md">
               SunPark removes ownership burden from your team.
             </h3>

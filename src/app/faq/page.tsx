@@ -68,7 +68,7 @@ export default function FAQPage() {
       </SectionShell>
 
       <SectionShell>
-        <SignatureCard tone="cream">
+        <SignatureCard tone="dark">
           <p className="eyebrow">Still evaluating fit?</p>
           <h2 className="type-display-md">
             The right first step is a site-specific conversation.
@@ -79,10 +79,10 @@ export default function FAQPage() {
             is appropriate.
           </p>
           <div className="button-row">
-            <Button href="/contact" variant="secondary">
+            <Button href="/contact" variant="secondaryOnDark">
               {siteMeta.primaryCta}
             </Button>
-            <Button href="/solution" variant="secondary">
+            <Button href="/solution" variant="secondaryOnDark">
               See the solution
             </Button>
           </div>

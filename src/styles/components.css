@@ -131,12 +131,11 @@
 .eyebrow {
   color: var(--color-muted);
   font-family: var(--type-caption-family);
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1.5px;
-  line-height: 1.4;
+  font-size: var(--type-caption-size);
+  font-weight: var(--type-caption-weight);
+  letter-spacing: var(--type-caption-letter-spacing);
+  line-height: var(--type-caption-line-height);
   margin-bottom: var(--space-md);
-  text-transform: uppercase;
 }
 
 .hero-band {
@@ -147,7 +146,7 @@
 
 .hero-band__inner {
   margin-inline: auto;
-  max-width: 1200px;
+  max-width: var(--container-max);
   padding-inline: var(--container-padding);
   text-align: left;
 }
@@ -160,7 +159,7 @@
 }
 
 .hero-band__main {
-  max-width: 700px;
+  max-width: 680px;
 }
 
 .hero-band__copy {
@@ -205,8 +204,8 @@
   font-weight: var(--type-button-weight);
   justify-content: center;
   line-height: var(--type-button-line-height);
-  min-height: 44px;
-  padding: 12px 20px;
+  min-height: 48px;
+  padding: 16px 24px;
   text-decoration: none;
   transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
 }
@@ -231,7 +230,7 @@
 .button--secondary-on-dark {
   background: var(--color-canvas);
   border-color: var(--color-canvas);
-  color: var(--color-primary);
+  color: var(--color-ink);
 }
 
 .benefit-card,
@@ -240,11 +239,11 @@
 .mini-card,
 .team-card,
 .comparison-card {
-  background: var(--color-signature-cream);
+  background: var(--color-canvas);
   border: 1px solid var(--color-hairline);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-md);
   color: var(--color-body);
-  padding: var(--space-xl);
+  padding: var(--space-lg);
 }
 
 .benefit-card h3,
@@ -257,34 +256,8 @@
   margin-bottom: var(--space-sm);
 }
 
-.section-grid--two .benefit-card:nth-child(1) {
-  background: #ff4d8b;
-  color: var(--color-on-primary);
-}
-
-.section-grid--two .benefit-card:nth-child(1) h3 {
-  color: var(--color-on-primary);
-}
-
-.section-grid--two .benefit-card:nth-child(2) {
-  background: #1a3a3a;
-  color: var(--color-on-dark);
-}
-
-.section-grid--two .benefit-card:nth-child(2) h3 {
-  color: var(--color-on-dark);
-}
-
-.section-grid--two .benefit-card:nth-child(3) {
-  background: #b8a4ed;
-}
-
-.section-grid--two .benefit-card:nth-child(4) {
-  background: #ffb084;
-}
-
 .mini-card--soft {
-  background: var(--color-surface-card, #f5f0e0);
+  background: var(--color-surface-soft);
 }
 
 .mini-card--cream {
@@ -339,8 +312,8 @@
 
 .visual-card {
   background: var(--color-surface-soft);
-  border: 1px solid var(--color-hairline-soft, #f0f0f0);
-  border-radius: var(--radius-xl);
+  border: 1px solid var(--color-hairline);
+  border-radius: var(--radius-lg);
   min-height: 360px;
   overflow: hidden;
   padding: var(--space-xl);
@@ -387,9 +360,9 @@
 }
 
 .flow-card {
-  background: var(--color-canvas);
+  background: var(--color-signature-cream);
   border: 1px solid var(--color-hairline);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-md);
   color: var(--color-ink);
   padding: var(--space-lg);
 }
@@ -543,7 +516,7 @@
 }
 
 .signature-card {
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-lg);
   padding: var(--space-xxl);
 }
 
@@ -603,7 +576,7 @@
 .text-input {
   background: var(--color-canvas);
   border: 1px solid var(--color-hairline);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-sm);
   color: var(--color-ink);
   font-family: var(--type-body-md-family);
   font-size: var(--type-body-md-size);
@@ -623,11 +596,11 @@
 }
 
 .cta-band-light {
-  background: var(--color-surface-soft);
+  background: var(--color-surface-strong);
   border: 1px solid var(--color-hairline);
-  border-radius: var(--radius-xl);
+  border-radius: var(--radius-lg);
   color: var(--color-ink);
-  padding: 80px;
+  padding: var(--space-xxl);
   text-align: center;
 }
 
@@ -636,8 +609,8 @@
   background: var(--color-canvas);
   color: var(--color-ink);
   display: flex;
-  font-family: var(--type-label-md-family);
-  font-size: var(--type-label-md-size);
+  font-family: var(--type-body-md-family);
+  font-size: var(--type-body-md-size);
   height: var(--nav-height);
   position: sticky;
   top: 0;
@@ -658,9 +631,9 @@
 .top-nav__brand,
 .footer__brand {
   color: inherit;
-  font-family: var(--type-label-md-family);
-  font-size: var(--type-label-md-size);
-  font-weight: var(--type-label-md-weight);
+  font-family: var(--type-body-md-family);
+  font-size: var(--type-body-md-size);
+  font-weight: var(--type-body-md-weight);
 }
 
 .footer__brand {
@@ -675,17 +648,17 @@
 .top-nav__link,
 .mobile-nav__link {
   color: var(--color-ink);
-  font-family: var(--type-label-md-family);
-  font-size: var(--type-label-md-size);
-  font-weight: var(--type-label-md-weight);
+  font-family: var(--type-body-md-family);
+  font-size: var(--type-body-md-size);
+  font-weight: var(--type-body-md-weight);
 }
 
 .top-nav__actions .button {
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   font-size: var(--type-button-size);
   font-weight: var(--type-button-weight);
-  min-height: 44px;
-  padding: 12px 20px;
+  min-height: 48px;
+  padding: 16px 24px;
 }
 
 .top-nav__actions .button--secondary {
@@ -742,11 +715,11 @@
 }
 
 .footer-shell {
-  background: var(--color-surface-soft);
+  background: var(--color-canvas);
   color: var(--color-body);
   font-family: var(--type-legal-family);
-  font-size: var(--type-legal-size);
-  padding-block: 80px;
+  font-size: var(--type-body-md-size);
+  padding-block: 64px;
 }
 
 .footer {
@@ -865,16 +838,16 @@
 
 @media (max-width: 640px) {
   .type-display-xl {
-    font-size: 36px;
-    letter-spacing: -1.2px;
+    font-size: 40px;
+    letter-spacing: 0;
   }
 
   .type-display-lg {
-    font-size: 32px;
+    font-size: 36px;
   }
 
   .type-display-md {
-    font-size: 26px;
+    font-size: 28px;
   }
 }
 
