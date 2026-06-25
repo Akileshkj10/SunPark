@@ -29,7 +29,7 @@ export function HeroBand({
       <div className={children ? "hero-band__inner hero-band__inner--with-aside" : "hero-band__inner"}>
         <div className="hero-band__main">
           {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
-          <h1 className="type-display-lg hero-band__title">{title}</h1>
+          <h1 className="type-display-xl hero-band__title">{title}</h1>
           <p className="type-title-lg hero-band__copy">{body}</p>
           {primaryCta || secondaryCta ? (
             <div className="button-row">

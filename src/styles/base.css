@@ -182,18 +182,18 @@ h3,
 
 @media (max-width: 767px) {
   .type-display-xl {
-    font-size: 40px;
-    letter-spacing: 0;
+    font-size: 36px;
+    letter-spacing: -1.2px;
   }
 
   .type-display-lg {
-    font-size: 36px;
-    letter-spacing: 0;
+    font-size: 32px;
+    letter-spacing: -0.8px;
   }
 
   .type-display-md {
     font-size: 28px;
-    letter-spacing: 0;
+    letter-spacing: -0.5px;
   }
 }
 
