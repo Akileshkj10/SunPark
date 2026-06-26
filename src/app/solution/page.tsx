@@ -31,7 +31,7 @@ export default function SolutionPage() {
       <HeroBand
         body="SunPark makes solar adoption operationally simple: we fund, own, and run the carport while your site buys the generated electricity through a long-term PPA."
         eyebrow="Solution"
-        primaryCta={{ label: "Check whether your site is suitable", href: "/contact" }}
+        primaryCta={{ label: "Get in touch", href: "/contact" }}
         secondaryCta={{ label: "View the process", href: "/process" }}
         title="Solar carports with zero upfront capex."
       />
@@ -152,7 +152,7 @@ export default function SolutionPage() {
 
       <SectionShell>
         <div className="cta-band-light">
-          <p className="eyebrow">Assess a site</p>
+          <p className="eyebrow">Get started</p>
           <h2 className="type-display-md">
             Find out whether your parking area is suitable.
           </h2>
@@ -162,7 +162,7 @@ export default function SolutionPage() {
             carport PPA is a fit.
           </p>
           <div className="button-row">
-            <Button href="/contact">{siteMeta.primaryCta}</Button>
+            <Button href="/contact">Get in touch</Button>
             <Button href="/sectors" variant="secondary">
               Explore sectors
             </Button>

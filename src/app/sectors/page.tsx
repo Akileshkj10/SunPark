@@ -28,7 +28,7 @@ export default function SectorsPage() {
       <HeroBand
         body="SunPark is built for commercial parking assets where energy cost pressure and customer experience matter. Across sectors, the value stays consistent: no upfront capex, shaded parking, and clean electricity through a managed PPA."
         eyebrow="Sectors"
-        primaryCta={{ label: siteMeta.primaryCta, href: "/contact" }}
+        primaryCta={{ label: "Get in touch", href: "/contact" }}
         secondaryCta={{ label: "How the process works", href: "/process" }}
         title="Built for Morocco's commercial parking assets."
       />
@@ -112,7 +112,7 @@ export default function SectorsPage() {
             ownership context, and electricity demand.
           </p>
           <div className="button-row">
-            <Button href="/contact">{siteMeta.primaryCta}</Button>
+            <Button href="/contact">Get in touch</Button>
             <Button href="/solution" variant="secondary">
               See the solution
             </Button>

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { navigation, siteMeta } from "@/content/site";
 import { Button } from "./Button";
@@ -17,7 +18,14 @@ export function TopNav() {
           href="/"
           onClick={() => setIsOpen(false)}
         >
-          SunPark
+          <Image
+            src="/logo.png"
+            alt="SunPark"
+            height={36}
+            width={108}
+            style={{ height: 36, width: "auto", display: "block", mixBlendMode: "multiply" }}
+            priority
+          />
         </Link>
 
         <nav aria-label="Primary navigation" className="top-nav__links">
@@ -29,9 +37,7 @@ export function TopNav() {
         </nav>
 
         <div className="top-nav__actions">
-          <Button href="/contact">
-            {siteMeta.primaryCta}
-          </Button>
+          <Button href="/contact" variant="secondary">Contact us</Button>
         </div>
 
         <button
@@ -63,8 +69,8 @@ export function TopNav() {
               {item.label}
             </Link>
           ))}
-          <Button href="/contact" onClick={() => setIsOpen(false)}>
-            {siteMeta.primaryCta}
+          <Button href="/contact" variant="secondary" onClick={() => setIsOpen(false)}>
+            Contact us
           </Button>
         </nav>
       </div>

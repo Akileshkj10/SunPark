@@ -80,7 +80,7 @@ export default function FAQPage() {
           </p>
           <div className="button-row">
             <Button href="/contact" variant="secondary">
-              {siteMeta.primaryCta}
+              Get in touch
             </Button>
             <Button href="/solution" variant="secondary">
               See the solution

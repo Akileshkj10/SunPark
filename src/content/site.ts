@@ -13,7 +13,7 @@ export const siteMeta = {
   name: "SunPark",
   description:
     "Turn commercial parking in Morocco into shaded solar power with zero upfront capex.",
-  primaryCta: "Assess your site",
+  primaryCta: "Get in touch",
   secondaryCta: "How it works",
 };
 

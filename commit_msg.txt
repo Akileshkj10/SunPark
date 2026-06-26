@@ -1,0 +1,11 @@
+Rebrand to green palette, add logo, remove Assess your site button
+
+- Shift entire colour system from warm orange/cream to clean green tones
+- Replace all orange/coral/peach/purple signature colours with green variants
+- Benefit cards updated to green spectrum (forest, mint, pale mint)
+- Add SunPark logo to TopNav and Footer with mix-blend-mode for seamless rendering
+- Remove Assess your site CTA button from all pages, nav, and footer
+- Replace with neutral Get in touch / Contact us labels throughout
+- PDF teaser: fact-check all claims against PPTX, fix payback (4yr to 2yr),
+  margin (86.5 to 86%), install cost (262K to 260K), remove invented IRR and
+  discount rate, rebuild competition table from slide 10 source data

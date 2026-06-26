@@ -28,7 +28,7 @@ export default function Home() {
       <HeroBand
         body={positioning.publicText}
         eyebrow="Solar Carport as a Service"
-        primaryCta={{ label: siteMeta.primaryCta, href: "/contact" }}
+        primaryCta={{ label: "Get in touch", href: "/contact" }}
         secondaryCta={{ label: siteMeta.secondaryCta, href: "/process" }}
         title="Turn parking assets into reliable, lower-cost clean power."
       >
@@ -192,7 +192,7 @@ export default function Home() {
             carport and long-term clean electricity PPA.
           </p>
           <div className="button-row">
-            <Button href="/contact">{siteMeta.primaryCta}</Button>
+            <Button href="/contact">Get in touch</Button>
             <Button href="/solution" variant="secondary">
               Explore the solution
             </Button>

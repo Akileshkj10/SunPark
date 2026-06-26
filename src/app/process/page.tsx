@@ -119,7 +119,7 @@ export default function ProcessPage() {
             solar carport PPA.
           </p>
           <div className="button-row">
-            <Button href="/contact">{siteMeta.primaryCta}</Button>
+            <Button href="/contact">Get in touch</Button>
             <Button href="/sectors" variant="secondary">
               View sectors
             </Button>

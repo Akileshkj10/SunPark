@@ -28,7 +28,7 @@ export default function CompanyPage() {
       <HeroBand
         body="SunPark exists to make commercial solar adoption simpler in Morocco: zero upfront capex for customers, a managed PPA structure, and long-term operations handled by SunPark."
         eyebrow="Company"
-        primaryCta={{ label: siteMeta.primaryCta, href: "/contact" }}
+        primaryCta={{ label: "Get in touch", href: "/contact" }}
         secondaryCta={{ label: "See the solution", href: "/solution" }}
         title="A Morocco-focused clean infrastructure operator."
       />
@@ -136,7 +136,7 @@ export default function CompanyPage() {
             to turn parking assets into long-term clean energy infrastructure.
           </p>
           <div className="button-row">
-            <Button href="/contact">{siteMeta.primaryCta}</Button>
+            <Button href="/contact">Get in touch</Button>
             <Button href="/process" variant="secondary">
               View the process
             </Button>

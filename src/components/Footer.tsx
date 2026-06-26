@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { navigation, positioning, siteMeta } from "@/content/site";
 import { Button } from "./Button";
 
@@ -8,7 +9,13 @@ export function Footer() {
       <div className="footer">
         <div className="footer__intro">
           <Link className="footer__brand" href="/">
-            SunPark
+            <Image
+              src="/logo.png"
+              alt="SunPark"
+              height={48}
+              width={144}
+              style={{ height: 48, width: "auto", display: "block", mixBlendMode: "multiply" }}
+            />
           </Link>
           <p className="footer__copy">{positioning.publicText}</p>
         </div>
@@ -23,7 +30,7 @@ export function Footer() {
 
         <div className="footer__cta">
           <p className="type-caption">Commercial parking assets in Morocco.</p>
-          <Button href="/contact">{siteMeta.primaryCta}</Button>
+          <Button href="/contact">Get in touch</Button>
         </div>
       </div>
     </footer>
